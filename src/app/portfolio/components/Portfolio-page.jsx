@@ -1,36 +1,17 @@
 "use client";
 import React, { useState, useRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowUpRight, ArrowLeft } from 'lucide-react';
 
-// Define TypeScript interfaces
-interface Project {
-  title: string;
-  description: string;
-  fullDescription: string;
-  image: string;
-  additionalImages: string[];
-  category: string;
-  year: string;
-  client: string;
-  location: string;
-  accentColor: string;
-}
-
-interface ProjectCardProps {
-  project: Project;
-  index: number;
-  onClick: () => void;
-}
-
 const PortfolioPage = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [isDetailView, setIsDetailView] = useState<boolean>(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isDetailView, setIsDetailView] = useState(false);
+  const containerRef = useRef(null);
   
   // Handle escape key for closing project details
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
+    const handleKeyDown = (e) => {
       if (e.key === 'Escape' && isDetailView) {
         setIsDetailView(false);
       }
@@ -50,7 +31,7 @@ const PortfolioPage = () => {
     return () => { document.body.style.overflow = 'auto'; };
   }, [isDetailView]);
 
-  const projects: Project[] = [
+  const projects = [
     {
       title: "Nostalgia Lovers Festival",
       description: "Un voyage dans le temps à travers une expérience immersive unique",
@@ -102,13 +83,12 @@ const PortfolioPage = () => {
   ];
 
   // Handle click on "Découvrir" button
-  const handleProjectClick = (index: number) => {
+  const handleProjectClick = (index) => {
     setSelectedProject(projects[index]);
     setIsDetailView(true);
     // Scroll to top when opening detail view
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
   return (
     <div ref={containerRef} className="bg-black min-h-screen relative">
       <div className="relative z-10">
@@ -327,7 +307,7 @@ const PortfolioPage = () => {
 };
 
 // Enhanced Project Card Component (with always visible description)
-const EnhancedProjectCard: React.FC<ProjectCardProps> = ({ project, index, onClick }) => {
+const EnhancedProjectCard = ({ project, index, onClick }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -396,5 +376,20 @@ const EnhancedProjectCard: React.FC<ProjectCardProps> = ({ project, index, onCli
     </motion.div>
   );
 };
-
+EnhancedProjectCard.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    fullDescription: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    additionalImages: PropTypes.arrayOf(PropTypes.string).isRequired,
+    category: PropTypes.string.isRequired,
+    year: PropTypes.string.isRequired,
+    client: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    accentColor: PropTypes.string.isRequired
+  }).isRequired,
+  index: PropTypes.number.isRequired,
+  onClick: PropTypes.func.isRequired
+};
 export default PortfolioPage;
