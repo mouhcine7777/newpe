@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/AboutSection.jsx", "src/app/apropos/components/Apropos.jsx", "src/app/components/Footer.jsx", "src/app/components/CaseStudySection.jsx", "src/app/contact/components/Contact-page.jsx", "src/app/components/ServicesSection.jsx", "src/app/components/NewsletterSection.jsx", "src/app/components/Header.jsx", "src/app/portfolio/components/Portfolio-page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/AboutSection.jsx", "src/app/apropos/components/Apropos.jsx", "src/app/components/Footer.jsx", "src/app/components/CaseStudySection.jsx", "src/app/contact/components/Contact-page.jsx", "src/app/components/ServicesSection.jsx", "src/app/components/NewsletterSection.jsx", "src/app/components/Header.jsx", "src/app/portfolio/components/Portfolio-page.jsx"],
   "exclude": ["node_modules"]
 }

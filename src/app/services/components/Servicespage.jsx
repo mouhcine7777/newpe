@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Sparkles, Award, Users, ArrowRight, Lightbulb, Zap, Globe, 
@@ -8,8 +9,8 @@ import {
 
 const Services = () => {
   const [activeService, setActiveService] = useState(null);
-  const [expandedService, setExpandedService] = useState<number | null>(null);
-  const expandedRef = React.useRef<HTMLDivElement>(null);
+  const [expandedService, setExpandedService] = useState(null);
+  const expandedRef = React.useRef(null);
   
 
   const services = [
@@ -171,16 +172,15 @@ const Services = () => {
     }
   ];
 
-  const handleDiscoverClick = (index: number) => {
+  const handleDiscoverClick = (index) => {
     setExpandedService(index);
-    // Reset when opening a different service
     if (expandedService !== index) {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
       });
     }
-};
+  };
 
   const closeExpandedView = () => {
     setExpandedService(null);
