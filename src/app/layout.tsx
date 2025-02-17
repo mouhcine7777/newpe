@@ -1,5 +1,5 @@
 // app/layout.tsx
-import { Montserrat, Inter } from '@next/font/google';
+import { Montserrat, Inter } from 'next/font/google';  // Updated import
 import type { Metadata } from "next";
 import "./globals.css";
 
