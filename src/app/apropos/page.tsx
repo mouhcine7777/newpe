@@ -1,6 +1,7 @@
 import Apropos from "./components/Apropos";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ChatWidget from "../components/ChatWidget";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Apropos />
       <Footer />
+      <ChatWidget />
     </main>
   );
 }

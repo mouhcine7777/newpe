@@ -45,7 +45,7 @@ const PortfolioPage = () => {
       accentColor: "#9d4edd"
     },
     {
-      title: "Pavillon Maroc",
+      title: "AMDIE GIFA Dusseldorf",
       description: "L'essence du Maroc contemporain dans une architecture avant-gardiste",
       fullDescription: "Pour l'exposition internationale de design, nous avons conçu un pavillon qui réinterprète les éléments architecturaux marocains traditionnels à travers un prisme futuriste. La structure modulaire en aluminium et verre s'inspire des motifs géométriques zellige, avec un système d'éclairage dynamique qui transforme l'espace au fil de la journée. Le pavillon a remporté le prix de l'innovation architecturale et a été couvert par plus de 30 publications internationales d'architecture.",
       image: "/about1.jpg",
@@ -53,7 +53,7 @@ const PortfolioPage = () => {
       category: "Exhibition Design",
       year: "2023",
       client: "ONMT",
-      location: "Dubai, UAE",
+      location: "Dusseldorf, Allemagne",
       accentColor: "#ff6b6b"  
     },
     {
@@ -69,32 +69,199 @@ const PortfolioPage = () => {
       accentColor: "#00b4d8"
     },
     {
-      title: "Smart City Casablanca",
-      description: "L'avenir urbain intelligent prend forme à Casablanca",
-      fullDescription: "Ce projet d'urbanisme à grande échelle intègre technologie, durabilité et design centré sur l'humain pour transformer un quartier de Casablanca. Nous avons conçu des espaces publics interactifs, des systèmes de transport intelligent et des mobiliers urbains connectés, créant un écosystème urbain qui répond aux besoins changeants de ses habitants. Le projet pilote a démontré une réduction de 40% de la consommation d'énergie et une amélioration significative de la qualité de vie pour les résidents.",
-      image: "/smartcity.jpg",
-      additionalImages: ["/smartcity-detail1.jpg", "/smartcity-detail2.jpg", "/smartcity-detail3.jpg"],
-      category: "Urban Design",
+      title: "UM6P Culture Day",
+      description: "Célébration culturelle immersive pour l'Université Mohammed VI Polytechnique",
+      fullDescription: "Un événement culturel d'envergure qui a transformé le campus de l'UM6P en un véritable festival des cultures du monde. Nous avons conçu des pavillons thématiques représentant différentes cultures, avec des installations interactives, des spectacles et des ateliers participatifs. L'événement a rassemblé plus de 15 000 participants de 50 nationalités différentes.",
+      image: "/realisations/UM6P.png",
+      additionalImages: ["/realisations/UM6P.png", "/realisations/UM6P.png", "/realisations/UM6P.png"],
+      category: "Cultural Event",
       year: "2024",
-      client: "Ville de Casablanca",
+      client: "Université Mohammed VI Polytechnique",
+      location: "Ben Guerir, Maroc",
+      accentColor: "#10b981"
+    },
+    {
+      title: "OCP Speed Networking",
+      description: "Événement de networking innovant pour le Groupe OCP",
+      fullDescription: "Un concept révolutionnaire de networking qui combine technologie et design d'espace pour optimiser les rencontres professionnelles. Nous avons créé des zones thématiques avec des outils numériques de mise en relation, des espaces modulaires adaptables et un système de gamification. L'événement a généré plus de 3000 connexions professionnelles en une journée.",
+      image: "/realisations/ocp.png",
+      additionalImages: ["/realisations/ocp.png", "/realisations/ocp.png", "/realisations/ocp.png"],
+      category: "Corporate Event",
+      year: "2024",
+      client: "Groupe OCP",
       location: "Casablanca, Maroc",
-      accentColor: "#2ec4b6"
+      accentColor: "#3b82f6"
+    },
+    {
+      title: "Casa Events Smart City",
+      description: "Vision futuriste de la ville intelligente casablancaise",
+      fullDescription: "Une exposition immersive présentant les solutions technologiques pour la ville de demain. Nous avons développé des maquettes interactives, des expériences de réalité augmentée et des démonstrations live de technologies smart city. Le projet a sensibilisé plus de 20 000 visiteurs aux enjeux urbains du futur.",
+      image: "/realisations/smartcity.png",
+      additionalImages: ["/realisations/smartcity.png", "/realisations/smartcity.png", "/realisations/smartcity.png"],
+      category: "Smart City",
+      year: "2024",
+      client: "Casa Events",
+      location: "Casablanca, Maroc",
+      accentColor: "#8b5cf6"
+    },
+    {
+      title: "Afriquia Team Building",
+      description: "Expérience de cohésion d'équipe créative pour Afriquia",
+      fullDescription: "Un programme de team building innovant combinant défis créatifs, activités sportives et ateliers collaboratifs. Nous avons conçu des espaces modulaires adaptés à différentes activités et développé un parcours gamifié personnalisé. L'événement a renforcé la cohésion de plus de 500 collaborateurs.",
+      image: "/realisations/teambuilding.png",
+      additionalImages: ["/realisations/teambuilding.png", "/realisations/teambuilding.png", "/realisations/teambuilding.png"],
+      category: "Team Building",
+      year: "2024",
+      client: "Afriquia",
+      location: "Mohammedia, Maroc",
+      accentColor: "#f59e0b"
+    },
+    {
+      title: "Immogallery",
+      description: "Galerie immobilière interactive et moderne",
+      fullDescription: "Un showroom immobilier révolutionnaire qui utilise la réalité virtuelle et la visualisation 3D pour présenter les projets. Nous avons créé un espace futuriste avec des écrans interactifs, des visites virtuelles immersives et des outils de personnalisation en temps réel. La galerie a augmenté les ventes de 40% en six mois.",
+      image: "/realisations/immo.png",
+      additionalImages: ["/realisations/immo.png", "/realisations/immo.png", "/realisations/immo.png"],
+      category: "Real Estate",
+      year: "2024",
+      client: "Immogallery",
+      location: "Casablanca, Maroc",
+      accentColor: "#06b6d4"
+    },
+    {
+      title: "WTCR Village Afriquia",
+      description: "Village événementiel pour le Championnat du Monde des Voitures de Tourisme",
+      fullDescription: "Un village temporaire spectaculaire pour accueillir le WTCR, combinant espaces VIP, zones de divertissement et installations techniques. Nous avons conçu une architecture modulaire inspirée de l'univers automobile, avec des matériaux durables et des technologies de pointe. L'événement a attiré plus de 100 000 spectateurs sur trois jours.",
+      image: "/realisations/afriquia.png",
+      additionalImages: ["/realisations/afriquia.png", "/realisations/afriquia.png", "/realisations/afriquia.png"],
+      category: "Motorsport Event",
+      year: "2024",
+      client: "Afriquia",
+      location: "Marrakech, Maroc",
+      accentColor: "#ef4444"
+    },
+    {
+      title: "Safran Group Gulfstream G700",
+      description: "Présentation exclusive du jet privé Gulfstream G700 pour Safran",
+      fullDescription: "Un événement de lancement prestigieux pour présenter le nouveau jet Gulfstream G700. Nous avons créé un hangar d'exposition théâtralisé avec un éclairage cinématographique, des projections immersives et des espaces de réception luxueux. L'événement a rassemblé 300 invités VIP et généré une couverture médiatique internationale.",
+      image: "/realisations/safran.png",
+      additionalImages: ["/realisations/safran.png", "/realisations/safran.png", "/realisations/safran.png"],
+      category: "Aviation Event",
+      year: "2024",
+      client: "Safran Group",
+      location: "Casablanca, Maroc",
+      accentColor: "#1e40af"
+    },
+    {
+      title: "UM6P Folk Show",
+      description: "Spectacle folklorique traditionnel pour l'Université Mohammed VI Polytechnique",
+      fullDescription: "Un spectacle grandiose célébrant la richesse du patrimoine culturel marocain. Nous avons conçu une scénographie évolutive avec des décors modulaires, des costumes traditionnels revisités et des effets spéciaux modernes. Le show a été présenté devant plus de 5000 spectateurs et a été diffusé en direct.",
+      image: "/realisations/fulk.png",
+      additionalImages: ["/realisations/fulk.png", "/realisations/fulk.png", "/realisations/fulk.png"],
+      category: "Cultural Show",
+      year: "2024",
+      client: "Université Mohammed VI Polytechnique",
+      location: "Ben Guerir, Maroc",
+      accentColor: "#dc2626"
+    },
+    {
+      title: "Solution Agency ITB Berlin Egypt",
+      description: "Pavillon étatique égyptien au salon international du tourisme de Berlin",
+      fullDescription: "Conception et réalisation du pavillon officiel de l'Égypte au salon ITB Berlin, le plus grand salon du tourisme au monde. Nous avons créé un espace immersif célébrant la richesse historique et les nouvelles destinations égyptiennes, avec des technologies interactives et des expériences sensorielles. Le pavillon a attiré plus de 50 000 visiteurs professionnels.",
+      image: "/realisations/pavillons-etatiques.png",
+      additionalImages: ["/realisations/pavillons-etatiques.png", "/realisations/pavillons-etatiques.png", "/realisations/pavillons-etatiques.png"],
+      category: "State Pavilion",
+      year: "2022",
+      client: "Ministère du Tourisme d'Égypte",
+      location: "Berlin, Allemagne",
+      accentColor: "#f97316"
+    },
+    {
+      title: "ADA ADIFE",
+      description: "Stand d'exposition pour l'Agence de Développement Agricole",
+      fullDescription: "Un stand innovant présentant les solutions durables pour l'agriculture moderne au Maroc. Nous avons intégré des technologies de présentation interactives, des espaces de démonstration live et des zones de rencontre professionnelle. Le stand a généré plus de 2000 contacts qualifiés et plusieurs partenariats stratégiques.",
+      image: "/realisations/adif2023.png",
+      additionalImages: ["/realisations/adif2023.png", "/realisations/adif2023.png", "/realisations/adif2023.png"],
+      category: "Agricultural Exhibition",
+      year: "2023",
+      client: "Agence de Développement Agricole",
+      location: "Meknès, Maroc",
+      accentColor: "#22c55e"
+    },
+    {
+      title: "Gitex Stand INWI",
+      description: "Stand technologique innovant pour l'opérateur INWI au salon GITEX",
+      fullDescription: "Un stand futuriste présentant les innovations 5G et les solutions digitales d'INWI. Nous avons développé des démonstrations interactives, des espaces de réalité virtuelle et des zones de test technologique. Le stand a été élu 'Meilleur Stand Innovation' du salon et a généré une couverture médiatique exceptionnelle.",
+      image: "/realisations/inwi.png",
+      additionalImages: ["/realisations/adif2023.png", "/realisations/adif2023.png", "/realisations/adif2023.png"],
+      category: "Tech Exhibition",
+      year: "2023",
+      client: "INWI",
+      location: "Dubai, UAE",
+      accentColor: "#a855f7"
+    },
+    {
+      title: "SIAM Groupe Crédit Agricole",
+      description: "Présence remarquable du Crédit Agricole au Salon International de l'Agriculture",
+      fullDescription: "Un pavillon d'exposition mettant en valeur l'engagement du Crédit Agricole dans le développement du secteur agricole marocain. Nous avons créé des espaces thématiques présentant les solutions de financement, avec des présentations interactives et des rencontres B2B. Le pavillon a accueilli plus de 15 000 visiteurs professionnels.",
+      image: "/realisations/gca.png",
+      additionalImages: ["/realisations/gca.png", "/realisations/gca.png", "/realisations/gca.png"],
+      category: "Agricultural Fair",
+      year: "2023",
+      client: "Groupe Crédit Agricole",
+      location: "Meknès, Maroc",
+      accentColor: "#059669"
+    },
+    {
+      title: "IRESEN Solar Decathlon Africa",
+      description: "Pavillon solaire innovant pour la compétition Solar Decathlon Africa",
+      fullDescription: "Conception d'un pavillon exemplaire combinant architecture durable et technologies solaires avancées. Nous avons développé une structure autonome en énergie, avec des matériaux éco-responsables et des systèmes intelligents. Le projet a remporté le prix de l'innovation architecturale et a été répliqué dans plusieurs universités africaines.",
+      image: "/realisations/iresen.png",
+      additionalImages: ["/realisations/iresen.png", "/realisations/iresen.png", "/realisations/iresen.png"],
+      category: "Sustainable Energy",
+      year: "2023",
+      client: "IRESEN",
+      location: "Ben Guerir, Maroc",
+      accentColor: "#eab308"
+    },
+    {
+      title: "Pavillon Russe Dubai",
+      description: "Représentation culturelle russe prestigieuse à Dubai",
+      fullDescription: "Un pavillon grandiose célébrant la culture russe contemporaine à Dubai. Nous avons conçu un espace immersif combinant architecture traditionnelle et technologies modernes, avec des espaces d'exposition, de spectacle et de gastronomie. Le pavillon a attiré plus de 200 000 visiteurs et a renforcé les liens culturels russo-émiratis.",
+      image: "/realisations/russe.png",
+      additionalImages: ["/realisations/russe.png", "/realisations/russe.png", "/realisations/russe.png"],
+      category: "Cultural Pavilion",
+      year: "2019",
+      client: "Consulat de Russie",
+      location: "Dubai, UAE",
+      accentColor: "#dc2626"
+    },
+    {
+      title: "FRMB World Series Boxing",
+      description: "Événement international de boxe World Series organisé par la FRMB",
+      fullDescription: "Organisation complète d'un événement de boxe de niveau mondial, incluant la conception de l'arène, la scénographie du spectacle et la gestion technique. Nous avons créé une expérience spectaculaire pour 12 000 spectateurs, avec des effets pyrotechniques, un éclairage professionnel et une retransmission TV internationale.",
+      image: "/realisations/wbs.png",
+      additionalImages: ["/realisations/wbs.png", "/realisations/wbs.png", "/realisations/wbs.png"],
+      category: "Sports Event",
+      year: "2015",
+      client: "Fédération Royale Marocaine de Boxe",
+      location: "Casablanca, Maroc",
+      accentColor: "#991b1b"
     }
   ];
 
-  // Handle click on "Découvrir" button
+  // Handle click on project card
   const handleProjectClick = (index) => {
     setSelectedProject(projects[index]);
     setIsDetailView(true);
-    // Scroll to top when opening detail view
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
   return (
     <div ref={containerRef} className="bg-black min-h-screen relative">
       <div className="relative z-10">
         {/* Enhanced Hero Section */}
-        <header className="relative py-20 px-4 md:px-8 lg:px-16 overflow-hidden">
-          <div className="max-w-7xl mx-auto">
+        <header className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+          <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -107,7 +274,7 @@ const PortfolioPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="flex flex-col items-start relative z-10"
+              className="flex flex-col items-center relative z-10 mt-8"
             >
               <motion.div 
                 initial={{ scale: 0, opacity: 0 }}
@@ -121,7 +288,7 @@ const PortfolioPage = () => {
                 </span>
               </motion.div>
               
-              <h1 className="font-montserrat font-bold text-3xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight max-w-4xl">
+              <h1 className="font-montserrat font-bold text-3xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
                 <span className="relative inline-block">
                   Des projets qui
                   <motion.span
@@ -157,35 +324,27 @@ const PortfolioPage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="text-white/70 font-montserrat text-base md:text-xl max-w-2xl mb-16 leading-relaxed"
+                className="text-white/70 font-montserrat text-base md:text-xl leading-relaxed max-w-2xl"
               >
                 Des expériences immersives qui transforment l'espace, le temps et la perception. Chaque projet raconte une histoire unique à travers l'innovation et la créativité.
               </motion.p>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-16"
-              >
-              </motion.div>
             </motion.div>
           </div>
         </header>
 
         {/* Portfolio Grid */}
-      <section className="max-w-[1400px] mx-auto px-4 pb-32">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <EnhancedProjectCard 
-              key={index}
-              project={project}
-              index={index}
-              onClick={() => handleProjectClick(index)}
-            />
-          ))}
-        </div>
-      </section>
+        <section className="w-full px-4 pb-32">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <EnhancedProjectCard 
+                key={index}
+                project={project}
+                index={index}
+                onClick={() => handleProjectClick(index)}
+              />
+            ))}
+          </div>
+        </section>
       </div>
 
       {/* Project Detail Overlay */}
@@ -221,12 +380,6 @@ const PortfolioPage = () => {
                     src={selectedProject.image} 
                     alt={selectedProject.title}
                     className="w-full h-full object-cover"
-                  />
-                  <div 
-                    className="absolute inset-0" 
-                    style={{ 
-                      background: `linear-gradient(to top, #000 0%, transparent 100%), linear-gradient(to right, ${selectedProject.accentColor}66, transparent)` 
-                    }}
                   />
                   
                   <button
@@ -285,9 +438,9 @@ const PortfolioPage = () => {
                   
                   {/* Gallery */}
                   <h3 className="font-montserrat font-semibold text-xl text-white/90 mb-6">Galerie du projet</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     {selectedProject.additionalImages.map((img, idx) => (
-                      <div key={idx} className="aspect-[4/3] rounded-lg overflow-hidden">
+                      <div key={idx} className="min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden">
                         <img 
                           src={img} 
                           alt={`${selectedProject.title} - Image ${idx + 1}`}
@@ -306,7 +459,7 @@ const PortfolioPage = () => {
   );
 };
 
-// Enhanced Project Card Component (with always visible description)
+// Enhanced Project Card Component (fully clickable)
 const EnhancedProjectCard = ({ project, index, onClick }) => {
   return (
     <motion.div
@@ -314,7 +467,8 @@ const EnhancedProjectCard = ({ project, index, onClick }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group h-[450px] rounded-xl overflow-hidden relative flex flex-col"
+      onClick={onClick}
+      className="group h-[450px] rounded-xl overflow-hidden relative flex flex-col cursor-pointer"
     >
       {/* Card background image */}
       <div className="absolute inset-0 z-0">
@@ -326,7 +480,7 @@ const EnhancedProjectCard = ({ project, index, onClick }) => {
         <div 
           className="absolute inset-0"
           style={{ 
-            background: `linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%), linear-gradient(45deg, ${project.accentColor}66, transparent 70%)` 
+            background: `linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 100%)` 
           }}
         />
       </div>
@@ -345,37 +499,35 @@ const EnhancedProjectCard = ({ project, index, onClick }) => {
           </div>
           
           {/* Title */}
-          <h3 className="font-montserrat font-bold text-2xl text-white mb-3 tracking-tight group-hover:text-[#d71b1b]">
+          <h3 className="font-montserrat font-bold text-2xl text-white mb-3 tracking-tight group-hover:text-[#d71b1b] transition-colors duration-300">
             {project.title}
           </h3>
           
           {/* Description - always visible */}
-          <p className="text-white/80 text-sm mb-5 max-w-sm line-clamp-3">
+          <p className="text-white/80 text-sm mb-5 line-clamp-3">
             {project.description}
           </p>
           
-          {/* Action button */}
-          <button
-            onClick={onClick}
-            className="inline-flex items-center gap-2 text-sm font-medium text-white relative overflow-hidden group/btn"
-          >
+          {/* Action indicator */}
+          <div className="inline-flex items-center gap-2 text-sm font-medium text-white relative overflow-hidden">
             <span>Découvrir le projet</span>
             <div className="relative">
               <ArrowUpRight 
-                className="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                 style={{ color: project.accentColor }}
               />
             </div>
             <span 
-              className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover/btn:w-full"
+              className="absolute bottom-0 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full"
               style={{ backgroundColor: project.accentColor }}
             />
-          </button>
+          </div>
         </div>
       </div>
     </motion.div>
   );
 };
+
 EnhancedProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
@@ -392,4 +544,5 @@ EnhancedProjectCard.propTypes = {
   index: PropTypes.number.isRequired,
   onClick: PropTypes.func.isRequired
 };
+
 export default PortfolioPage;

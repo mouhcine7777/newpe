@@ -122,7 +122,7 @@ const Services = () => {
       title: "Expériences Digitales",
       subtitle: "Digital Experience",
       description: "Créez des connexions numériques puissantes avec votre audience. Nos solutions digitales interactives complètent vos expériences physiques pour un impact maximal.",
-      image: "/about2.webp",
+      image: "/digitalexp.png",
       stats: ["300+ Projets", "50+ Innovations", "96% Engagement"],
       icon: <Zap className="w-6 h-6" />,
       color: "#38B000",
@@ -141,7 +141,7 @@ const Services = () => {
           result: "28M d'impressions sur les réseaux sociaux",
           testimonial: "L'expérience digitale a transformé notre événement physique en phénomène viral, étendant notre portée bien au-delà de nos attentes."
         },
-        gallery: ["/about2.webp", "/about1.jpg", "/about3.jpg"]
+        gallery: ["/digitalexp.png", "/about1.jpg", "/about3.jpg"]
       }
     },
     {

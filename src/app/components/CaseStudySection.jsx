@@ -39,6 +39,111 @@ const CaseStudySection = () => {
       image: "/smartcity.jpg",
       category: "Urban Design",
       year: "2024"
+    },
+    {
+      title: "UM6P Culture Day",
+      description: "Célébration culturelle immersive pour l'Université Mohammed VI Polytechnique",
+      image: "/realisations/UM6P.png",
+      category: "Cultural Event",
+      year: "2024"
+    },
+    {
+      title: "OCP Speed Networking",
+      description: "Événement de networking innovant pour le Groupe OCP",
+      image: "/realisations/ocp.png",
+      category: "Corporate Event",
+      year: "2024"
+    },
+    {
+      title: "Casa Events Smart City",
+      description: "Vision futuriste de la ville intelligente casablancaise",
+      image: "/realisations/smartcity.png",
+      category: "Smart City",
+      year: "2024"
+    },
+    {
+      title: "Afriquia Team Building",
+      description: "Expérience de cohésion d'équipe créative pour Afriquia",
+      image: "/realisations/teambuilding.png",
+      category: "Team Building",
+      year: "2024"
+    },
+    {
+      title: "Immogallery",
+      description: "Galerie immobilière interactive et moderne",
+      image: "/realisations/immo.png",
+      category: "Real Estate",
+      year: "2024"
+    },
+    {
+      title: "WTCR Village Afriquia",
+      description: "Village événementiel pour le Championnat du Monde des Voitures de Tourisme",
+      image: "/realisations/afriquia.png",
+      category: "Motorsport Event",
+      year: "2024"
+    },
+    {
+      title: "Safran Group Gulfstream G700",
+      description: "Présentation exclusive du jet privé Gulfstream G700 pour Safran",
+      image: "/realisations/safran.png",
+      category: "Aviation Event",
+      year: "2024"
+    },
+    {
+      title: "UM6P Folk Show",
+      description: "Spectacle folklorique traditionnel pour l'Université Mohammed VI Polytechnique",
+      image: "/realisations/fulk.png",
+      category: "Cultural Show",
+      year: "2024"
+    },
+    {
+      title: "Solution Agency ITB Berlin Egypt",
+      description: "Pavillon étatique égyptien au salon international du tourisme de Berlin",
+      image: "/realisations/pavillons-etatiques.png",
+      category: "State Pavilion",
+      year: "2022"
+    },
+    {
+      title: "ADA ADIFE",
+      description: "Stand d'exposition pour l'Agence de Développement Agricole",
+      image: "/realisations/adif2023.png",
+      category: "Agricultural Exhibition",
+      year: "2023"
+    },
+    {
+      title: "Gitex Stand INWI",
+      description: "Stand technologique innovant pour l'opérateur INWI au salon GITEX",
+      image: "/realisations/inwi.png",
+      category: "Tech Exhibition",
+      year: "2023"
+    },
+    {
+      title: "SIAM Groupe Crédit Agricole",
+      description: "Présence remarquable du Crédit Agricole au Salon International de l'Agriculture",
+      image: "/realisations/gca.png",
+      category: "Agricultural Fair",
+      year: "2023"
+    },
+    {
+      title: "IRESEN Solar Decathlon Africa",
+      description: "Pavillon solaire innovant pour la compétition Solar Decathlon Africa",
+      image: "/realisations/iresen.png",
+      category: "Sustainable Energy",
+      year: "2023"
+    },
+    {
+      title: "Pavillon Russe Dubai",
+      description: "Représentation culturelle russe prestigieuse à Dubai",
+      image: "/realisations/russe.png",
+      category: "Cultural Pavilion",
+      year: "2019"
+    },
+    {
+      title: "FRMB World Series Boxing",
+      description: "Événement international de boxe World Series organisé par la FRMB",
+      image: "/realisations/wbs.png",
+      category: "Sports Event",
+      year: "2015"
     }
   ];
 

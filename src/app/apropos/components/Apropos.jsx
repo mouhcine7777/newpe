@@ -52,93 +52,152 @@ const Apropos = () => {
             </motion.h1>
           </div>
         </motion.div>
-
-        {/* Features Grid */}
-        <div className="max-w-7xl mx-auto px-4 py-12 sm:py-16 md:py-24">
-          <motion.div 
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-            variants={staggerChildren}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-          >
-            <motion.div
-              variants={fadeUpItem}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/5 to-white/10 p-6 sm:p-8 hover:from-white/10 hover:to-white/20 transition-all duration-500"
-            >
-              <Target className="w-10 h-10 sm:w-12 sm:h-12 text-[#d71b1b] mb-4 sm:mb-6" />
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Notre Mission</h3>
-              <p className="text-sm sm:text-base text-white/80">
-                Public Events est une agence de communication globale et événementielle. 
-                Filiale de PARTHENON HOLDING, spécialisé dans la production audiovisuelle.
-              </p>
-              <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-[#d71b1b]/10 rounded-full blur-2xl group-hover:w-32 group-hover:h-32 transition-all duration-500" />
-            </motion.div>
-
-            <motion.div
-              variants={fadeUpItem}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/5 to-white/10 p-6 sm:p-8 hover:from-white/10 hover:to-white/20 transition-all duration-500"
-            >
-              <Users className="w-10 h-10 sm:w-12 sm:h-12 text-[#d71b1b] mb-4 sm:mb-6" />
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Notre Équipe</h3>
-              <p className="text-sm sm:text-base text-white/80">
-                Grâce à la répartition en différents pôles, chacun intervient sur des projets 
-                qui relève de son domaine d'expertise.
-              </p>
-              <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-[#d71b1b]/10 rounded-full blur-2xl group-hover:w-32 group-hover:h-32 transition-all duration-500" />
-            </motion.div>
-
-            <motion.div
-              variants={fadeUpItem}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/5 to-white/10 p-6 sm:p-8 hover:from-white/10 hover:to-white/20 transition-all duration-500 sm:col-span-2 lg:col-span-1"
-            >
-              <Sparkles className="w-10 h-10 sm:w-12 sm:h-12 text-[#d71b1b] mb-4 sm:mb-6" />
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Notre Expertise</h3>
-              <p className="text-sm sm:text-base text-white/80">
-                Bénéficiant de la diversité culturelle et académique, notre équipe apporte 
-                un conseil personnalisé et des plans d'action pertinents.
-              </p>
-              <div className="absolute -bottom-2 -right-2 w-24 h-24 bg-[#d71b1b]/10 rounded-full blur-2xl group-hover:w-32 group-hover:h-32 transition-all duration-500" />
-            </motion.div>
-          </motion.div>
+      {/* about Section */}
+      <div className="relative w-full py-20 md:py-32">
+        <div className="max-w-4xl mx-auto px-4 text-center w-full">
+          <div className="relative inline-block">
+            <h2 className="text-3xl md:text-5xl font-bold mb-12">
+              Notre qualité première...
+              <span className="block text-[#d71b1b] text-4xl md:text-6xl mt-4">
+                La complémentarité !
+              </span>
+            </h2>
+            <div className="absolute -bottom-4 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d71b1b] to-transparent" />
+          </div>
+          
+          <div className="relative mt-16 w-full">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#d71b1b] to-black opacity-5 blur-3xl" />
+            <p className="text-xl leading-relaxed text-gray-300 relative z-10">
+              Bénéficiant de la diversité culturelle et académique de ses membres, 
+              notre équipe apporte à chaque client un conseil personnalisé et des 
+              plans d'action pertinents.
+            </p>
+          </div>
         </div>
-
-         {/* Timeline Section */}
-      <div className="py-12 sm:py-16 md:py-20">
-        <motion.h2 
-          className="text-center font-montserrat text-3xl sm:text-4xl font-bold text-white mb-12 sm:mb-16 px-4"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+      </div>
+      
+      {/* Features Grid - Redesigned */}
+      <div className="max-w-7xl mx-auto px-4 py-16 md:py-32 relative">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-gradient-to-br from-[#d71b1b]/20 to-transparent opacity-30 blur-3xl -z-10" />
+        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-[#d71b1b]/20 to-transparent opacity-30 blur-3xl -z-10" />
+        
+        <motion.div 
+          className="relative"
+          variants={staggerChildren}
+          initial="initial"
+          whileInView="animate"
           viewport={{ once: true }}
         >
-          Notre <span className="text-[#d71b1b]">Histoire</span>
-        </motion.h2>
+          {/* Mission Card */}
+          <motion.div 
+            variants={fadeUpItem}
+            className="relative mb-24 md:mb-32 mx-auto"
+          >
+            <div className="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto">
+              <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0 relative z-10">
+                <Target className="w-16 h-16 text-[#d71b1b] mb-6 relative z-10" />
+                <h3 className="text-3xl font-bold mb-6 relative z-10">Notre Mission</h3>
+                <p className="text-lg text-white/80 relative z-10">
+                  Public Events est une agence de communication globale et événementielle. 
+                  Filiale de PARTHENON HOLDING, spécialisé dans la production audiovisuelle.
+                </p>
+                
+              </div>
+              
+              <motion.div 
+                className="w-full md:w-1/2 h-64 sm:h-80 md:h-96 relative rounded-2xl overflow-hidden"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#d71b1b]/20 to-black/60 z-10" />
+                <Image
+                  src="/about1.jpg" // Replace with your actual image
+                  alt="Notre Mission"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent z-20" />
+                <div className="absolute bottom-4 left-6 z-30">
+                  <span className="text-xs text-white/80">NOTRE VISION</span>
+                  <h4 className="text-xl font-bold">Excellence & Créativité</h4>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
 
-        <div className="container relative max-w-6xl mx-auto px-4">
-          {/* Timeline Center Line */}
-          <div className="absolute left-4 md:left-1/2 w-px h-full md:-translate-x-1/2 bg-gradient-to-b from-[#d71b1b] via-[#d71b1b]/50 to-transparent" />
-          
-          {[2002, 2010, 2015, 2024].map((year, index) => (
-            <motion.div
-              key={year}
-              className={`relative flex items-start md:items-center gap-8 mb-12 md:mb-16 ${
-                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-              }`}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <div className="hidden md:block md:w-1/2" />
-              <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#d71b1b] rounded-full mt-3 md:mt-0">
-                <div className="absolute w-8 h-8 bg-[#d71b1b]/30 rounded-full -inset-2 animate-ping" />
+          {/* Equipe Card */}
+          <motion.div 
+            variants={fadeUpItem}
+            className="relative mb-24 md:mb-32 mx-auto"
+          >
+            <div className="flex flex-col md:flex-row-reverse items-center justify-between max-w-5xl mx-auto">
+              <div className="w-full md:w-1/2 md:pl-8 mb-8 md:mb-0 relative z-10">
+                <Users className="w-16 h-16 text-[#d71b1b] mb-6 relative z-10" />
+                <h3 className="text-3xl font-bold mb-6 relative z-10">Notre Équipe</h3>
+                <p className="text-lg text-white/80 relative z-10">
+                  Grâce à la répartition en différents pôles, chacun intervient sur des projets 
+                  qui relève de son domaine d'expertise.
+                </p>
               </div>
-              <div className="pl-8 md:pl-0 w-full md:w-1/2 bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-                <h3 className="text-xl sm:text-2xl font-bold text-[#d71b1b] mb-4">{year}</h3>
-                <p className="text-white/80">Une étape importante dans notre histoire...</p>
+              
+              <motion.div 
+                className="w-full md:w-1/2 h-64 sm:h-80 md:h-96 relative rounded-2xl overflow-hidden"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#d71b1b]/20 to-black/60 z-10" />
+                <Image
+                  src="/about3.jpg" // Replace with your actual image
+                  alt="Notre Équipe"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent z-20" />
+                <div className="absolute bottom-4 left-6 z-30">
+                  <span className="text-xs text-white/80">NOS TALENTS</span>
+                  <h4 className="text-xl font-bold">Passionnés & Créatifs</h4>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Expertise Card */}
+          <motion.div 
+            variants={fadeUpItem}
+            className="relative mb-16 mx-auto"
+          >
+            <div className="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto">
+              <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0 relative z-10">
+                <Sparkles className="w-16 h-16 text-[#d71b1b] mb-6 relative z-10" />
+                <h3 className="text-3xl font-bold mb-6 relative z-10">Notre Expertise</h3>
+                <p className="text-lg text-white/80 relative z-10">
+                  Bénéficiant de la diversité culturelle et académique, notre équipe apporte 
+                  un conseil personnalisé et des plans d'action pertinents.
+                </p>
               </div>
-            </motion.div>
-          ))}
-        </div>
+              
+              <motion.div 
+                className="w-full md:w-1/2 h-64 sm:h-80 md:h-96 relative rounded-2xl overflow-hidden"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#d71b1b]/20 to-black/60 z-10" />
+                <Image
+                  src="/about2.webp" // Replace with your actual image
+                  alt="Notre Expertise"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent z-20" />
+                <div className="absolute bottom-4 left-6 z-30">
+                  <span className="text-xs text-white/80">NOTRE SAVOIR-FAIRE</span>
+                  <h4 className="text-xl font-bold">Innovation & Précision</h4>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </motion.div>
       </div>
 
         {/* CTA Section */}

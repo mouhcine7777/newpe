@@ -1,5 +1,6 @@
 // components/HeroSection.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -45,14 +46,17 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* CTA Button with creative hover effect */}
+        {/* CTA Button with creative hover effect - Fixed Link implementation */}
         <div className="mt-12 relative group">
           <div className="absolute inset-0 bg-[#D71B1B] rounded-full blur-md opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
-          <button className="relative font-inter bg-white text-black px-8 py-3 rounded-full text-lg font-semibold 
-                           hover:bg-[#D71B1B] hover:text-white transition-all duration-300 transform hover:scale-105
-                           border-2 border-transparent hover:border-white">
+          <Link 
+            href="/services"
+            className="inline-block relative font-inter bg-white text-black px-8 py-3 rounded-full text-lg font-semibold 
+                       hover:bg-[#D71B1B] hover:text-white transition-all duration-300 transform hover:scale-105
+                       border-2 border-transparent hover:border-white"
+          >
             Découvrir nos services
-          </button>
+          </Link>
         </div>
 
         {/* Scroll Indicator */}
